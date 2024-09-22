@@ -75,7 +75,11 @@ test('Add Multiple Items to Cart and Validate Checkout Journey', async ({ page }
 
   // Validate that items are in the checkout overview
   const overviewItems = await page.locator('.cart_item .inventory_item_name').allTextContents();
+  console.log('Overview Items:', overviewItems); // Log the raw items for debugging
+  
   const cleanedOverviewItems = overviewItems.map(item => item.trim());
+  console.log('Cleaned Overview Items:', cleanedOverviewItems);
+  
   expect(cleanedOverviewItems).toContain('Sauce Labs Backpack');
   expect(cleanedOverviewItems).toContain('Sauce Labs Bike Light');
   expect(cleanedOverviewItems).toContain('Sauce Labs Fleece Jacket');

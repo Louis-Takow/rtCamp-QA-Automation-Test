@@ -6,15 +6,14 @@
     "accessibility-test": "npx playwright test tests/accessibilityTest.test.js",
     "sauce-demo-test": "npx playwright test tests/saucDemoTest.test.js",
     "visual-test-reference": "backstop reference",
-    "visual-test": "backstop test",
-    "run-all-tests": "npm run accessibility-test && npm run sauce-demo-test && npm run visual-test"
+    "visual-test": "backstop test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.47.1",
+    "@playwright/test": "^1.47.2",
     "@types/node": "^22.5.5"
   },
   "dependencies": {
