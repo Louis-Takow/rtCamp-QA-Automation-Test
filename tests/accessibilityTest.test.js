@@ -50,7 +50,28 @@ test.describe('Accessibility tests for Sauce Demo App', () => {
       await checkA11y(page);
   });
 
-  test('Accessibility test for Checkout Page', async ({ page }) => {
+  test('Accessibility test for Checkout Step One Page', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    const inventoryPage = new InventoryPage(page);
+    const cartPage = new CartPage(page);
+    const checkoutPage = new CheckoutPage(page);
+
+    await loginPage.navigate();
+    await loginPage.login('standard_user', 'secret_sauce');
+    await inventoryPage.addBackpackToCart();
+    await inventoryPage.goToCart();
+    await cartPage.proceedToCheckout();
+
+    // This is the step where you are on Checkout Step One Page
+    await checkoutPage.fillCheckoutInformation('John', 'Doe', '12345');
+
+    // Inject axe-core for accessibility testing
+    await injectAxe(page);
+
+    // Run accessibility checks on the checkout-step-one page
+    await checkA11y(page);
+});
+  test('Accessibility test for Checkout overview Page', async ({ page }) => {
       const loginPage = new LoginPage(page);
       const inventoryPage = new InventoryPage(page);
       const cartPage = new CartPage(page);
