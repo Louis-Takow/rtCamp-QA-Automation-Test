@@ -24,12 +24,6 @@ This project automates testing of the Sauce Demo web application using **Playwri
    npx playwright install
    ```
 
-3. To run all the tests and generate a report:
-
-   ```bash
-   npm run run-all-tests
-   ```
-
 ## Running Tests
 
 ### Functional Tests
