@@ -28,25 +28,36 @@ This project automates testing of the Sauce Demo web application using **Playwri
 
 ### Functional Tests
 
-1. **Test Execution**: Run the default set of functional tests using Playwright. Execute:
+1. **Test Execution**:
+   i. **Headless mode**: Run the default set of functional tests using Playwright. Execute:
 
    ```bash
    npm run sauce-demo-test
    ```
+   ii. **Headed mode**: Run the default set of functional tests using Playwright headed mode. Execute:
 
-2. **Results**: View test reports after execution. A browser window will display a detailed breakdown of passed and failed tests.
+   ```bash
+    npx playwright test --ui 
+   ```
+
+3. **Results**: View test reports after execution. A browser window will display a detailed breakdown of passed and failed tests.
 
 ### Accessibility Tests
 
 1. **Accessibility Setup**: We use the **axe-core** library, integrated with Playwright, to check for accessibility issues on the web pages.
 
 2. **How to Run Accessibility Tests**: Execute the following command to run accessibility tests independently:
+     i. **Headless mode**: Run the default set of accessibility tests using Axe-Playwright. Execute:
 
    ```bash
    npm run accessibility-test
    ```
+ ii. **Headed mode**: Run the default set of accessibility tests using Axe-Playwright headed mode. Execute:
 
-3. **Accessibility Report**: After the test run, an accessibility report is generated, highlighting any issues such as missing ARIA attributes, poor contrast ratios, or structural issues. The results are printed in the console for quick review.
+   ```bash
+    npx playwright test --ui 
+   ```
+4. **Accessibility Report**: After the test run, an accessibility report is generated, highlighting any issues such as missing ARIA attributes, poor contrast ratios, or structural issues. The results are printed in the console for quick review.
 
 #### **Accessibility Tests Overview**:
 
