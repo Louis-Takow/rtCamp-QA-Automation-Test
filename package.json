@@ -7,7 +7,7 @@
     "sauce-demo-test": "npx playwright test tests/saucDemoTest.test.js",
     "visual-test-reference": "backstop reference",
     "visual-test": "backstop test",
-    "run-all-tests": "npm run accessibility-test && npm run sauce-demo-test && npm run visual-test-reference && npm run visual-test"
+    "run-all-tests": "npm run accessibility-test && npm run sauce-demo-test && npm run visual-test"
   },
   "keywords": [],
   "author": "",

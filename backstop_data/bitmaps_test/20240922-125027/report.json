@@ -4,9 +4,7 @@
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Login_Page_0_document_0_desktop.png",
-        "referenceLog": "..\\bitmaps_reference\\saucedemo_Login_Page_0_document_0_desktop.log.json",
         "test": "..\\bitmaps_test\\20240922-125027\\saucedemo_Login_Page_0_document_0_desktop.png",
-        "testLog": "..\\bitmaps_test\\20240922-125027\\saucedemo_Login_Page_0_document_0_desktop.log.json",
         "selector": "document",
         "fileName": "saucedemo_Login_Page_0_document_0_desktop.png",
         "label": "Login Page",
@@ -29,9 +27,7 @@
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_0_document_0_desktop.png",
-        "referenceLog": "..\\bitmaps_reference\\saucedemo_Inventory_Page_0_document_0_desktop.log.json",
         "test": "..\\bitmaps_test\\20240922-125027\\saucedemo_Inventory_Page_0_document_0_desktop.png",
-        "testLog": "..\\bitmaps_test\\20240922-125027\\saucedemo_Inventory_Page_0_document_0_desktop.log.json",
         "selector": "document",
         "fileName": "saucedemo_Inventory_Page_0_document_0_desktop.png",
         "label": "Inventory Page",
@@ -56,9 +52,7 @@
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_0_document_0_desktop.png",
-        "referenceLog": "..\\bitmaps_reference\\saucedemo_Cart_Page_0_document_0_desktop.log.json",
         "test": "..\\bitmaps_test\\20240922-125027\\saucedemo_Cart_Page_0_document_0_desktop.png",
-        "testLog": "..\\bitmaps_test\\20240922-125027\\saucedemo_Cart_Page_0_document_0_desktop.log.json",
         "selector": "document",
         "fileName": "saucedemo_Cart_Page_0_document_0_desktop.png",
         "label": "Cart Page",
@@ -81,9 +75,7 @@
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Step-0ne_Page_0_document_0_desktop.png",
-        "referenceLog": "..\\bitmaps_reference\\saucedemo_Checkout_Step-0ne_Page_0_document_0_desktop.log.json",
         "test": "..\\bitmaps_test\\20240922-125027\\saucedemo_Checkout_Step-0ne_Page_0_document_0_desktop.png",
-        "testLog": "..\\bitmaps_test\\20240922-125027\\saucedemo_Checkout_Step-0ne_Page_0_document_0_desktop.log.json",
         "selector": "document",
         "fileName": "saucedemo_Checkout_Step-0ne_Page_0_document_0_desktop.png",
         "label": "Checkout Step-0ne Page",
@@ -109,9 +101,7 @@
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Overview_Page_0__0_desktop.png",
-        "referenceLog": "..\\bitmaps_reference\\saucedemo_Checkout_Overview_Page_0__0_desktop.log.json",
         "test": "..\\bitmaps_test\\20240922-125027\\saucedemo_Checkout_Overview_Page_0__0_desktop.png",
-        "testLog": "..\\bitmaps_test\\20240922-125027\\saucedemo_Checkout_Overview_Page_0__0_desktop.log.json",
         "selector": "",
         "fileName": "saucedemo_Checkout_Overview_Page_0__0_desktop.png",
         "label": "Checkout Overview Page",

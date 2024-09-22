@@ -4,36 +4,43 @@ const { InventoryPage } = require('../pages/InventoryPage');
 const { CartPage } = require('../pages/CartPage');
 const { CheckoutPage } = require('../pages/CheckoutPage');
 
+// After each test, capture a screenshot if the test fails
+test.afterEach(async ({ page }, testInfo) => {
+  if (testInfo.status !== testInfo.expectedStatus) {
+    await page.screenshot({ path: `screenshots/${testInfo.title}.png` });
+  }
+});
+
 test('Verify Sorting Order Z-A on All Items Page', async ({ page }) => {
-    const loginPage = new LoginPage(page);
-    const inventoryPage = new InventoryPage(page);
+  const loginPage = new LoginPage(page);
+  const inventoryPage = new InventoryPage(page);
 
-    await loginPage.navigate();
-    await loginPage.login('standard_user', 'secret_sauce');
+  await loginPage.navigate();
+  await loginPage.login('standard_user', 'secret_sauce');
 
-    // Sort items Z-A
-    await inventoryPage.sortItemsBy('za');
+  // Sort items Z-A
+  await inventoryPage.sortItemsBy('za');
 
-    // Validate sorting order
-    const productNames = await inventoryPage.getAllProductNames();
-    const sortedProductNames = [...productNames].sort((a, b) => b.localeCompare(a));
-    expect(productNames).toEqual(sortedProductNames);
+  // Validate sorting order
+  const productNames = await inventoryPage.getAllProductNames();
+  const sortedProductNames = [...productNames].sort((a, b) => b.localeCompare(a));
+  expect(productNames).toEqual(sortedProductNames);
 });
 
 test('Verify Price Order High-Low on All Items Page', async ({ page }) => {
-    const loginPage = new LoginPage(page);
-    const inventoryPage = new InventoryPage(page);
+  const loginPage = new LoginPage(page);
+  const inventoryPage = new InventoryPage(page);
 
-    await loginPage.navigate();
-    await loginPage.login('standard_user', 'secret_sauce');
+  await loginPage.navigate();
+  await loginPage.login('standard_user', 'secret_sauce');
 
-    // Sort items by Price High to Low
-    await inventoryPage.sortItemsBy('hilo');
+  // Sort items by Price High to Low
+  await inventoryPage.sortItemsBy('hilo');
 
-    // Validate price order
-    const productPrices = await inventoryPage.getAllProductPrices();
-    const sortedPrices = [...productPrices].sort((a, b) => b - a);
-    expect(productPrices).toEqual(sortedPrices);
+  // Validate price order
+  const productPrices = await inventoryPage.getAllProductPrices();
+  const sortedPrices = [...productPrices].sort((a, b) => b - a);
+  expect(productPrices).toEqual(sortedPrices);
 });
 
 test('Add Multiple Items to Cart and Validate Checkout Journey', async ({ page }) => {
@@ -68,15 +75,7 @@ test('Add Multiple Items to Cart and Validate Checkout Journey', async ({ page }
 
   // Validate that items are in the checkout overview
   const overviewItems = await page.locator('.cart_item .inventory_item_name').allTextContents();
-  console.log('Overview Items:', overviewItems); // Log the raw items for debugging
-  
-  // Clean the overview items to get just the product names
   const cleanedOverviewItems = overviewItems.map(item => item.trim());
-  
-  // Log cleaned items for debugging
-  console.log('Cleaned Overview Items:', cleanedOverviewItems);
-  
-  // Validate that the cleaned items contain the expected product names
   expect(cleanedOverviewItems).toContain('Sauce Labs Backpack');
   expect(cleanedOverviewItems).toContain('Sauce Labs Bike Light');
   expect(cleanedOverviewItems).toContain('Sauce Labs Fleece Jacket');
@@ -84,16 +83,15 @@ test('Add Multiple Items to Cart and Validate Checkout Journey', async ({ page }
 
   // Extract prices from the cart
   const itemPrices = await page.locator('.cart_item .inventory_item_price').allTextContents();
-  const prices = itemPrices.map(price => parseFloat(price.replace('$', ''))); // Convert to float after removing the '$'
-  
+  const prices = itemPrices.map(price => parseFloat(price.replace('$', '')));
+
   // Calculate the total sum of prices
   const totalSum = prices.reduce((acc, curr) => acc + curr, 0);
-  console.log('Calculated Total:', totalSum); // Log the calculated total for debugging
 
   // Get the total displayed on the checkout overview
   const displayedTotalText = await page.locator('.summary_subtotal_label').textContent();
-  const displayedTotal = parseFloat(displayedTotalText.replace('Item total: $', '')); // Extract total as float
-  
+  const displayedTotal = parseFloat(displayedTotalText.replace('Item total: $', ''));
+
   // Assert that the calculated total matches the displayed total
   expect(totalSum).toBe(displayedTotal);
 
@@ -104,4 +102,3 @@ test('Add Multiple Items to Cart and Validate Checkout Journey', async ({ page }
   const confirmationMessage = await checkoutPage.getOrderConfirmationMessage();
   expect(confirmationMessage).toBe('Thank you for your order!');
 });
-
