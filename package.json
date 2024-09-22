@@ -1,0 +1,23 @@
+{
+  "name": "saucedemo-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "accessibility-test": "npx playwright test tests/accessibilityTest.test.js",
+    "sauce-demo-test": "npx playwright test tests/saucDemoTest.test.js",
+    "visual-test-reference": "backstop reference",
+    "visual-test": "backstop test",
+    "run-all-tests": "npm run accessibility-test && npm run sauce-demo-test && npm run visual-test-reference && npm run visual-test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.5"
+  },
+  "dependencies": {
+    "axe-playwright": "^2.0.2"
+  }
+}

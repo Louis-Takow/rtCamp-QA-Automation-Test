@@ -1,0 +1,69 @@
+{
+  "id": "saucedemo",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "onBeforeScript": "puppet/clearCookies.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Login Page",
+      "url": "https://www.saucedemo.com/",
+      "delay": 3000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Inventory Page",
+      "url": "https://www.saucedemo.com/",
+      "delay": 7000,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "puppet/navigateToInventory.js",
+      "postInteractionWait": 7000
+    },
+    {
+      "label": "Cart Page",
+      "url": "https://www.saucedemo.com/cart.html",
+      "delay": 5000,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "puppet/navigateToCart.js",
+      "postInteractionWait": 5000
+    },
+    {
+      "label": "Checkout Step-0ne Page",
+      "url": "https://www.saucedemo.com/",
+      "delay": 7000,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "puppet/navigateToCheckoutStepOne.js",
+      "postInteractionWait": 7000
+    },
+    {
+      "label": "Checkout Overview Page",
+      "url": "https://www.saucedemo.com/checkout-step-two.html",
+      "delay": 7000,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "puppet/navigateToCheckout.js",
+      "postInteractionWait": 7000
+    }
+   
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report",
+    "engine_scripts": "backstop_data/engine_scripts"
+  },
+  "report": ["browser", "editor", "json"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

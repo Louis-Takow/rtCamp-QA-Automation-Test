@@ -1,0 +1,558 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Login_Page_0_login_button_container_0_phone.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Login_Page_0_login_button_container_0_phone.png",
+        "selector": "#login_button_container",
+        "fileName": "saucedemo_Login_Page_0_login_button_container_0_phone.png",
+        "label": "Login Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Login_Page_0_login_button_container_1_tablet.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Login_Page_0_login_button_container_1_tablet.png",
+        "selector": "#login_button_container",
+        "fileName": "saucedemo_Login_Page_0_login_button_container_1_tablet.png",
+        "label": "Login Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Login_Page_0_login_button_container_2_desktop.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Login_Page_0_login_button_container_2_desktop.png",
+        "selector": "#login_button_container",
+        "fileName": "saucedemo_Login_Page_0_login_button_container_2_desktop.png",
+        "label": "Login Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_0_header_0_phone.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Inventory_Page_0_header_0_phone.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Inventory_Page_0_header_0_phone.png",
+        "label": "Inventory Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/inventory.html",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_1_inventory_list_0_phone.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Inventory_Page_1_inventory_list_0_phone.png",
+        "selector": ".inventory_list",
+        "fileName": "saucedemo_Inventory_Page_1_inventory_list_0_phone.png",
+        "label": "Inventory Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/inventory.html",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_0_header_1_tablet.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Inventory_Page_0_header_1_tablet.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Inventory_Page_0_header_1_tablet.png",
+        "label": "Inventory Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/inventory.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_1_inventory_list_1_tablet.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Inventory_Page_1_inventory_list_1_tablet.png",
+        "selector": ".inventory_list",
+        "fileName": "saucedemo_Inventory_Page_1_inventory_list_1_tablet.png",
+        "label": "Inventory Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/inventory.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_0_header_2_desktop.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Inventory_Page_0_header_2_desktop.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Inventory_Page_0_header_2_desktop.png",
+        "label": "Inventory Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/inventory.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_1_inventory_list_2_desktop.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Inventory_Page_1_inventory_list_2_desktop.png",
+        "selector": ".inventory_list",
+        "fileName": "saucedemo_Inventory_Page_1_inventory_list_2_desktop.png",
+        "label": "Inventory Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/inventory.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_0_header_0_phone.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Cart_Page_0_header_0_phone.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Cart_Page_0_header_0_phone.png",
+        "label": "Cart Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/cart.html",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_1_cart_list_0_phone.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Cart_Page_1_cart_list_0_phone.png",
+        "selector": ".cart_list",
+        "fileName": "saucedemo_Cart_Page_1_cart_list_0_phone.png",
+        "label": "Cart Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/cart.html",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_0_header_1_tablet.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Cart_Page_0_header_1_tablet.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Cart_Page_0_header_1_tablet.png",
+        "label": "Cart Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/cart.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_1_cart_list_1_tablet.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Cart_Page_1_cart_list_1_tablet.png",
+        "selector": ".cart_list",
+        "fileName": "saucedemo_Cart_Page_1_cart_list_1_tablet.png",
+        "label": "Cart Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/cart.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_0_header_2_desktop.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Cart_Page_0_header_2_desktop.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Cart_Page_0_header_2_desktop.png",
+        "label": "Cart Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/cart.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_1_cart_list_2_desktop.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Cart_Page_1_cart_list_2_desktop.png",
+        "selector": ".cart_list",
+        "fileName": "saucedemo_Cart_Page_1_cart_list_2_desktop.png",
+        "label": "Cart Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/cart.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Page_0_header_0_phone.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Checkout_Page_0_header_0_phone.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Checkout_Page_0_header_0_phone.png",
+        "label": "Checkout Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/checkout-step-one.html",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Page_1_cart_list_0_phone.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Checkout_Page_1_cart_list_0_phone.png",
+        "selector": ".cart_list",
+        "fileName": "saucedemo_Checkout_Page_1_cart_list_0_phone.png",
+        "label": "Checkout Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/checkout-step-one.html",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Page_0_header_1_tablet.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Checkout_Page_0_header_1_tablet.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Checkout_Page_0_header_1_tablet.png",
+        "label": "Checkout Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/checkout-step-one.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Page_1_cart_list_1_tablet.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Checkout_Page_1_cart_list_1_tablet.png",
+        "selector": ".cart_list",
+        "fileName": "saucedemo_Checkout_Page_1_cart_list_1_tablet.png",
+        "label": "Checkout Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/checkout-step-one.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Page_0_header_2_desktop.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Checkout_Page_0_header_2_desktop.png",
+        "selector": "#header",
+        "fileName": "saucedemo_Checkout_Page_0_header_2_desktop.png",
+        "label": "Checkout Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/checkout-step-one.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Page_1_cart_list_2_desktop.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_Checkout_Page_1_cart_list_2_desktop.png",
+        "selector": ".cart_list",
+        "fileName": "saucedemo_Checkout_Page_1_cart_list_2_desktop.png",
+        "label": "Checkout Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/checkout-step-one.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_BackstopJS_Homepage_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_BackstopJS_Homepage_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "saucedemo_BackstopJS_Homepage_0_document_0_phone.png",
+        "label": "BackstopJS Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://garris.github.io/BackstopJS/",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_BackstopJS_Homepage_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_BackstopJS_Homepage_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "saucedemo_BackstopJS_Homepage_0_document_1_tablet.png",
+        "label": "BackstopJS Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://garris.github.io/BackstopJS/",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_BackstopJS_Homepage_0_document_2_desktop.png",
+        "test": "..\\bitmaps_test\\20240920-171340\\saucedemo_BackstopJS_Homepage_0_document_2_desktop.png",
+        "selector": "document",
+        "fileName": "saucedemo_BackstopJS_Homepage_0_document_2_desktop.png",
+        "label": "BackstopJS Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://garris.github.io/BackstopJS/",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "id": "saucedemo"
+}
