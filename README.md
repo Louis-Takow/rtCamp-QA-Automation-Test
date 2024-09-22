@@ -27,7 +27,7 @@ This project automates testing of the Sauce Demo web application using **Playwri
 3. To run all the tests and generate a report:
 
    ```bash
-   npm run test
+   npm run run-all-tests
    ```
 
 ## Running Tests
