@@ -44,7 +44,7 @@ This project automates testing of the Sauce Demo web application using **Playwri
 
 ### Accessibility Tests
 
-1. **Accessibility Setup**: We use the **axe-core** library, integrated with Playwright, to check for accessibility issues on the web pages.
+1. **Accessibility Setup**: Use the **axe-core** library, integrated with Playwright, to check for accessibility issues on the web pages.
 
 2. **How to Run Accessibility Tests**: Execute the following command to run accessibility tests independently:
      i. **Headless mode**: Run the default set of accessibility tests using Axe-Playwright. Execute:
@@ -67,7 +67,7 @@ This project automates testing of the Sauce Demo web application using **Playwri
 
 ### Visual Regression Tests
 
-1. **Visual Testing Setup**: The use of **BackstopJS** alongside **Playwright** to conduct visual regression testing, ensuring the UI maintains consistency across updates.
+1. **Visual Testing Setup**: Use the **BackstopJS** alongside **Playwright** to conduct visual regression testing, ensuring the UI maintains consistency across updates.
 
 2. **How to Run Visual Tests**: Execute the visual comparison tests with:
 
@@ -82,8 +82,6 @@ This project automates testing of the Sauce Demo web application using **Playwri
 - **Visual Consistency**: Ensures critical UI components (e.g., buttons, modals, product listings) remain visually unchanged after updates.
 - **Baseline Images**: Stored in the `/backstop_data/bitmaps_reference` directory, these images are used for comparison.
 - **Difference Reporting**: Highlights pixel-level differences between actual and expected UI states.
-
-Here’s an edited version of the test details and best practices section based on the provided script:
 
 ### Test Details
 
