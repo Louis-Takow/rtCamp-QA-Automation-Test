@@ -1,0 +1,124 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Login_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-111354\\saucedemo_Login_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "saucedemo_Login_Page_0_document_0_desktop.png",
+        "label": "Login Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0,
+          "misMatchPercentage": "0.00",
+          "analysisTime": 87
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-111354\\saucedemo_Inventory_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "saucedemo_Inventory_Page_0_document_0_desktop.png",
+        "label": "Inventory Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0,
+          "misMatchPercentage": "0.00",
+          "analysisTime": 121
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-111354\\saucedemo_Cart_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "saucedemo_Cart_Page_0_document_0_desktop.png",
+        "label": "Cart Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/cart.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -38
+          },
+          "rawMisMatchPercentage": 19.988024120829575,
+          "misMatchPercentage": "19.99",
+          "analysisTime": 203
+        },
+        "diffImage": "..\\bitmaps_test\\20240923-111354\\failed_diff_saucedemo_Cart_Page_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-111354\\saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png",
+        "label": "Checkout Step-One Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/checkout-step-one.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\joelt\\Desktop\\New folder (3)\\rtCamp-QA-Automation-Test\\backstop_data\\bitmaps_reference\\saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Overview_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-111354\\saucedemo_Checkout_Overview_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "saucedemo_Checkout_Overview_Page_0_document_0_desktop.png",
+        "label": "Checkout Overview Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://www.saucedemo.com/checkout-step-two.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -494
+          },
+          "rawMisMatchPercentage": 12.364723154362416,
+          "misMatchPercentage": "12.36",
+          "analysisTime": 180
+        },
+        "diffImage": "..\\bitmaps_test\\20240923-111354\\failed_diff_saucedemo_Checkout_Overview_Page_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "saucedemo"
+}
