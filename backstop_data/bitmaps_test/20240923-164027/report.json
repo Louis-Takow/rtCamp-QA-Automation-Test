@@ -1,10 +1,10 @@
-report({
+{
   "testSuite": "BackstopJS",
   "tests": [
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Login_Page_0_document_0_desktop.png",
-        "test": "..\\bitmaps_test\\20240924-142412\\saucedemo_Login_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-164027\\saucedemo_Login_Page_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "saucedemo_Login_Page_0_document_0_desktop.png",
         "label": "Login Page",
@@ -19,15 +19,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 2.3472656250000004,
+          "misMatchPercentage": "2.35",
+          "analysisTime": 97
+        },
+        "diffImage": "..\\bitmaps_test\\20240923-164027\\failed_diff_saucedemo_Login_Page_0_document_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Inventory_Page_0_document_0_desktop.png",
-        "test": "..\\bitmaps_test\\20240924-142412\\saucedemo_Inventory_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-164027\\saucedemo_Inventory_Page_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "saucedemo_Inventory_Page_0_document_0_desktop.png",
         "label": "Inventory Page",
@@ -42,41 +45,35 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 7.887877592425609,
-          "misMatchPercentage": "7.89",
-          "analysisTime": 279
+          "rawMisMatchPercentage": 13.033067515779981,
+          "misMatchPercentage": "13.03",
+          "analysisTime": 150
         },
-        "diffImage": "..\\bitmaps_test\\20240924-142412\\failed_diff_saucedemo_Inventory_Page_0_document_0_desktop.png"
+        "diffImage": "..\\bitmaps_test\\20240923-164027\\failed_diff_saucedemo_Inventory_Page_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_0_document_0_desktop.png",
-        "test": "..\\bitmaps_test\\20240924-142412\\saucedemo_Cart_Page_0_document_0_desktop.png",
-        "selector": "document",
-        "fileName": "saucedemo_Cart_Page_0_document_0_desktop.png",
+        "reference": "..\\bitmaps_reference\\saucedemo_Cart_Page_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-164027\\saucedemo_Cart_Page_0__0_desktop.png",
+        "selector": "",
+        "fileName": "saucedemo_Cart_Page_0__0_desktop.png",
         "label": "Cart Page",
         "requireSameDimensions": true,
         "misMatchThreshold": 0.1,
         "url": "https://www.saucedemo.com/cart.html",
         "expect": 0,
         "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "misMatchPercentage": "0.00"
-        }
+        "engineErrorMsg": "Navigation timeout of 60000 ms exceeded",
+        "error": "Reference file not found C:\\Users\\joelt\\Desktop\\New folder (3)\\rtCamp-QA-Automation-Test\\backstop_data\\bitmaps_reference\\saucedemo_Cart_Page_0__0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png",
-        "test": "..\\bitmaps_test\\20240924-142412\\saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-164027\\saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png",
         "label": "Checkout Step-One Page",
@@ -86,20 +83,23 @@ report({
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": -5
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 2.1333567001180636,
+          "misMatchPercentage": "2.13",
+          "analysisTime": 126
+        },
+        "diffImage": "..\\bitmaps_test\\20240923-164027\\failed_diff_saucedemo_Checkout_Step-One_Page_0_document_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\saucedemo_Checkout_Overview_Page_0_document_0_desktop.png",
-        "test": "..\\bitmaps_test\\20240924-142412\\saucedemo_Checkout_Overview_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20240923-164027\\saucedemo_Checkout_Overview_Page_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "saucedemo_Checkout_Overview_Page_0_document_0_desktop.png",
         "label": "Checkout Overview Page",
@@ -121,4 +121,4 @@ report({
     }
   ],
   "id": "saucedemo"
-});
+}

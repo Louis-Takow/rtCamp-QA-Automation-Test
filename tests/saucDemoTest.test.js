@@ -24,6 +24,8 @@ test('Verify Sorting Order Z-A on All Items Page', async ({ page }) => {
   // Validate sorting order
   const productNames = await inventoryPage.getAllProductNames();
   const sortedProductNames = [...productNames].sort((a, b) => b.localeCompare(a));
+  console.log('productNames:',productNames);
+  console.log('sortedProdutNames:',sortedProductNames);
   expect(productNames).toEqual(sortedProductNames);
 });
 
@@ -40,6 +42,8 @@ test('Verify Price Order High-Low on All Items Page', async ({ page }) => {
   // Validate price order
   const productPrices = await inventoryPage.getAllProductPrices();
   const sortedPrices = [...productPrices].sort((a, b) => b - a);
+  console.log('productPrices:',productPrices);
+  console.log('sortedPrice:', sortedPrices);
   expect(productPrices).toEqual(sortedPrices);
 });
 
@@ -61,6 +65,7 @@ test('Add Multiple Items to Cart and Validate Checkout Journey', async ({ page }
 
   // Validate that all items are in the cart
   const cartItems = await cartPage.getCartItems();
+  console.log('cart Items:', cartItems);
   expect(cartItems).toContain('Sauce Labs Backpack');
   expect(cartItems).toContain('Sauce Labs Bike Light');
   expect(cartItems).toContain('Sauce Labs Fleece Jacket');
@@ -77,24 +82,26 @@ test('Add Multiple Items to Cart and Validate Checkout Journey', async ({ page }
   const overviewItems = await page.locator('.cart_item .inventory_item_name').allTextContents();
   console.log('Overview Items:', overviewItems); // Log the raw items for debugging
   
-  const cleanedOverviewItems = overviewItems.map(item => item.trim());
-  console.log('Cleaned Overview Items:', cleanedOverviewItems);
-  
-  expect(cleanedOverviewItems).toContain('Sauce Labs Backpack');
-  expect(cleanedOverviewItems).toContain('Sauce Labs Bike Light');
-  expect(cleanedOverviewItems).toContain('Sauce Labs Fleece Jacket');
-  expect(cleanedOverviewItems).toContain('Sauce Labs Onesie');
+  expect(overviewItems).toContain('Sauce Labs Backpack');
+  expect(overviewItems).toContain('Sauce Labs Bike Light');
+  expect(overviewItems).toContain('Sauce Labs Fleece Jacket');
+  expect(overviewItems).toContain('Sauce Labs Onesie');
+
+  expect(overviewItems).toEqual(cartItems);
 
   // Extract prices from the cart
   const itemPrices = await page.locator('.cart_item .inventory_item_price').allTextContents();
   const prices = itemPrices.map(price => parseFloat(price.replace('$', '')));
+  console.log('prices:', prices);
 
   // Calculate the total sum of prices
   const totalSum = prices.reduce((acc, curr) => acc + curr, 0);
+  console.log('totalSum:', totalSum);
 
   // Get the total displayed on the checkout overview
   const displayedTotalText = await page.locator('.summary_subtotal_label').textContent();
   const displayedTotal = parseFloat(displayedTotalText.replace('Item total: $', ''));
+  console.log('dispalyedTotal:', displayedTotal);
 
   // Assert that the calculated total matches the displayed total
   expect(totalSum).toBe(displayedTotal);
@@ -104,5 +111,6 @@ test('Add Multiple Items to Cart and Validate Checkout Journey', async ({ page }
 
   // Validate order confirmation
   const confirmationMessage = await checkoutPage.getOrderConfirmationMessage();
+  console.log('confirmationMessage:', confirmationMessage);
   expect(confirmationMessage).toBe('Thank you for your order!');
 });
