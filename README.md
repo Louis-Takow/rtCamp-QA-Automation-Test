@@ -21,7 +21,7 @@ This project automates testing of the Sauce Demo web application using **Playwri
 
    ```bash
    npm install
-   npm install @playwright/test
+   npm init playwright@latest
    ```
 
 ## Running Tests
