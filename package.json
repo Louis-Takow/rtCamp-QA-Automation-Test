@@ -9,7 +9,7 @@
     "visual-test": "backstop test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Louis Takow",
   "license": "ISC",
   "description": "",
   "devDependencies": {
